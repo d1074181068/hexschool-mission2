@@ -1,0 +1,848 @@
+/* reset start */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+/* reset end */
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+    background-image:
+        url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg'),
+        url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg');
+    background-position: right top, 110% 50%;
+    background-repeat: no-repeat, no-repeat;
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
+.wrap {
+    position: relative;
+    max-width: 1085px;
+    margin: 0 auto 134px;
+    overflow: hidden;
+}
+
+.bg_ball1 {
+    position: absolute;
+    top: 500px;
+    left: -220px;
+    z-index: -999;
+}
+
+.bg_ball2 {
+    position: absolute;
+    top: 1600px;
+    right: -50px;
+    z-index: -999;
+}
+
+.bg_ball3 {
+    position: absolute;
+    z-index: -999;
+    bottom: 820px;
+    left: 120px;
+}
+
+.to_top {
+    position: fixed;
+    right: 50px;
+    bottom: 20%;
+    z-index: 299;
+    display: none;
+}
+
+.to_top a {
+    display: block;
+    width: 71px;
+    height: 71px;
+    border: none;
+    border-radius: 50%;
+    background-color: #56C4C5;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Wendy One';
+    text-align: center;
+    text-decoration: none;
+    line-height: 71px;
+}
+
+.to_top a:hover {
+    color: red;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+    margin-bottom: 30px;
+}
+
+.header h1>a {
+    display: block;
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/logo.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 218px;
+    height: 40px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header>a {
+    background-color: #FF5D50;
+    display: block;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.header>a:hover {
+    color: red;
+    background-color: white;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 217px;
+}
+
+.banner_txt {
+    width: 50%;
+}
+
+.banner_txt h2 {
+    font-size: 18px;
+    color: #56C4C5;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.banner_txt h3 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.banner_txt h4 {
+    font-size: 20px;
+    padding-left: 3px;
+}
+
+.banner img {
+    max-width: 532px;
+    height: 534px;
+}
+
+.platform h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.plat_type {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
+}
+
+.plat_type li {
+    width: 23%;
+    text-align: center;
+}
+
+.plat_type img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 24px;
+}
+
+.plat_type h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.plat_type p {
+    color: #747474;
+    padding: 0px 10px;
+    letter-spacing: 0px;
+    line-height: 1.5;
+}
+
+.customization {
+    margin-bottom: 100px;
+
+}
+
+.customization h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.customization>p {
+    font-size: 20px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.cus_for {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cus_for li {
+    width: 24%;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 2px 10px #00000014;
+    background-color: white;
+}
+
+.cus_for img {
+    max-width: unset;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.cus_txt {
+    padding: 16px 16px 24px;
+    text-align: center;
+}
+
+.cus_txt h3 {
+    color: #56C4C5;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.cus_txt p {
+    line-height: 1.5;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.feature_item {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1
+}
+
+.feature_item li {
+    width: 40%;
+    padding: 32px 32px 48px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 2px 10px #00000014;
+}
+
+.rad_img {
+    width: 86px;
+    height: 86px;
+    padding: 17px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px #00000014;
+    margin-bottom: 24px;
+}
+
+.feature_item img {
+    width: 52px;
+    height: 52px;
+}
+
+.feature_item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.feature_item p {
+    line-height: 1.5;
+}
+
+.feature_item .transfer {
+    margin-bottom: 28px;
+    margin-right: 47px;
+}
+
+.feature_item .chat_bot {
+    margin-bottom: 28px;
+}
+
+.feature_item .integrate {
+    margin-right: 47px;
+}
+
+.custom_feature {
+    width: 50%;
+}
+
+.custom_feature h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.custom_feature p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.custom_feature a {
+    background-color: #56C4C5;
+    display: inline-block;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.custom_feature a:hover {
+    border: 1px solid #56C4C5;
+    background-color: white;
+    padding: 11px 32px;
+    color: #56C4C5;
+}
+
+.eval h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 104px;
+}
+
+.eval_detail {
+    display: flex;
+}
+
+.eval_detail li {
+    position: relative;
+    padding: 48px 32px 24px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 2px 10px #00000014;
+    background-color: white;
+}
+
+.eval_detail p {
+    line-height: 1.5;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #E5E4E2;
+    margin-bottom: 28px;
+}
+
+.eval_detail h3 {
+    font-weight: bold;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.eval_detail>li>img {
+    position: absolute;
+    top: -60px;
+    left: 32px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+
+}
+
+.comment_star {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer {
+    height: 503px;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.footer a {
+    background-color: #56C4C5;
+    display: inline-block;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    text-decoration: none;
+    width: 128px;
+    margin: 0 auto;
+}
+
+.footer a:hover {
+    border: 1px solid #56C4C5;
+    background-color: white;
+    padding: 11px 31px;
+    color: #56C4C5;
+}
+
+.footer p {
+    background-color: #F5F5F5;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+@media(max-width:992px) {
+    .wrap {
+        padding: 0px 25px;
+    }
+
+    .banner img {
+        max-width: 480px;
+        height: 500px;
+    }
+
+    .feature_item li {
+        width: 45%;
+    }
+
+    .feature_item .transfer {
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+
+    .feature_item .integrate {
+        margin-right: 25px;
+    }
+
+    .feature_item .chat_bot {
+        margin-bottom: 25px;
+    }
+
+    .custom_feature {
+        padding-left: 20px;
+    }
+
+}
+
+@media(max-width:768px) {
+    body {
+
+        background-image:
+            url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg'),
+            url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg');
+        background-position: 35% 10%, 110% 56%;
+        background-size: 85%, 200px;
+
+    }
+
+    .wrap {
+        padding-top: 120px;
+    }
+
+    .bg_ball1 {
+        width: 300px;
+        height: 300px;
+        top: 850px;
+        left: -200px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 199;
+        border-bottom: 2px solid #FFD153;
+        padding: 24px 20px;
+        background-color: white;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner_txt {
+        width: 100%;
+    }
+
+    .line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cus_for {
+        flex-wrap: wrap;
+    }
+
+    .cus_for li {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .features {
+        flex-direction: column;
+
+    }
+
+    .feature_item {
+        width: 80%;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+
+    .feature_item .transfer {
+        margin-bottom: 40px;
+    }
+
+    .feature_item .chat_bot {
+        margin-bottom: 40px;
+        background-color: white;
+    }
+
+    .custom_feature {
+        width: 100%;
+        align-self: flex-start;
+        margin-left: 70px;
+    }
+
+    .comment_star {
+        display: block;
+    }
+
+    .comment_star span {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg');
+        background-size: 100%;
+    }
+}
+
+@media(max-width:576px) {
+    body {
+        background-position: 35% 5%, 110% 50%;
+    }
+
+    .to_top {
+
+        position: fixed;
+        right: 10px;
+        bottom: 5%;
+        z-index: 299;
+    }
+
+    .bg_ball1 {
+        width: 150px;
+        height: 150px;
+        top: 800px;
+        left: -80px;
+    }
+
+    .banner {
+        margin-bottom: 98px;
+    }
+
+    .banner img {
+        max-width: 400px;
+        height: 400px;
+        margin-top: 50px;
+    }
+
+    .banner_txt h3 {
+        font-size: 32px;
+    }
+
+    .banner_txt h4 {
+        font-size: 16px;
+    }
+
+    .plat_type {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plat_type li {
+        width: 70%;
+        margin-bottom: 24px;
+    }
+
+    .customization>p {
+        width: 80%;
+        margin: 0 auto 48px;
+        line-height: 1.5;
+    }
+
+    .cus_for {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cus_for li {
+        width: 70%;
+    }
+
+    .feature_item {
+        width: 100%;
+    }
+
+    .features .feature_item li {
+        width: 70%;
+        margin: 0 0 20px;
+    }
+
+    .custom_feature {
+        margin-left: 0;
+    }
+
+    .eval_detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eval_detail li {
+        width: 70%;
+        margin-bottom: 80px;
+    }
+
+    .eval_detail .last_user {
+        margin-bottom: 0;
+    }
+
+    .footer h3 {
+        font-size: 24px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:380px) {
+    body {
+        background-position: 35% 6%, 110% 49%;
+        background-size: 100%, 200px;
+    }
+
+    .wrap {
+        padding-top: 160px;
+    }
+
+    .bg_ball1 {
+        display: none;
+    }
+
+    .header {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .header h1>a {
+        margin-bottom: 10px;
+    }
+
+    .banner img {
+        max-width: 304px;
+        height: 304px;
+        margin-top: 50px;
+    }
+
+    .plat_type li {
+        width: 90%;
+    }
+
+    .customization h2 {
+        font-size: 28px;
+    }
+
+    .customization>p {
+        width: 100%;
+    }
+
+    .cus_for li {
+        width: 90%;
+    }
+
+    .features .feature_item li {
+        width: 90%;
+        margin: 0 0 20px;
+    }
+
+    .eval_detail li {
+        width: 90%;
+        margin-bottom: 80px;
+    }
+}
+
+
+/* pay.html css start */
