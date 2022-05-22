@@ -147,7 +147,7 @@ img {
 /* reset end */
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-body {
+.index_body {
     background-image:
         url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg'),
         url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg');
@@ -160,7 +160,6 @@ body {
     position: relative;
     max-width: 1085px;
     margin: 0 auto 134px;
-    overflow: hidden;
 }
 
 .bg_ball1 {
@@ -243,8 +242,10 @@ body {
 }
 
 .header>a:hover {
+    padding: 11px 32px;
     color: red;
     background-color: white;
+    border: 1px solid #FF5D50;
 }
 
 .banner {
@@ -555,7 +556,7 @@ body {
     background-color: #F5F5F5;
     padding: 16px 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 @media(max-width:992px) {
@@ -846,3 +847,419 @@ body {
 
 
 /* pay.html css start */
+.pay_body {
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+}
+
+.pay_wrap {
+    position: relative;
+    max-width: 1085px;
+    margin: 0 auto 134px;
+}
+
+.pay_to_top {
+    position: fixed;
+    right: 50px;
+    bottom: 20%;
+    z-index: 299;
+    display: none;
+}
+
+.pay_to_top a {
+    display: block;
+    width: 71px;
+    height: 71px;
+    border: none;
+    border-radius: 50%;
+    background-color: #56C4C5;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Wendy One';
+    text-align: center;
+    text-decoration: none;
+    line-height: 71px;
+}
+
+.pay_to_top a:hover {
+    color: red;
+}
+
+.pay_banner {
+    padding: 92px 0 180px;
+    margin-bottom: 100px;
+}
+
+.pay_banner h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.plan>h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.subscriber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.subscriber li {
+    margin-right: 16px;
+}
+
+.subscriber a {
+    display: block;
+    padding: 12px 32px;
+    color: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    font-size: 18px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.subscriber a.active,
+.subscriber a:hover {
+    color: white;
+    background-color: #56C4C5;
+}
+
+.plan_detail {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.plan_detail>div {
+    width: 41%;
+    box-shadow: 0px 2px 10px #00000014;
+}
+
+.basic {
+    margin-right: 21px;
+}
+
+.basic>h2,
+.plan_pro>h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.item_basic,
+.item_pro {
+    padding: 32px 24px;
+}
+
+.item_basic>p {
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.item_pro>p {
+    text-align: center;
+    margin-bottom: 32px;
+    padding: 0px 54px;
+    line-height: 1.5;
+}
+
+.plan_pay {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+}
+
+.plan_pay li {
+    background-color: #F5F5F5;
+    padding: 24px 25px;
+    border-radius: 12px;
+}
+
+.plan_pay li>p {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.user>p {
+    font-size: 32px;
+    color: #56C4C5;
+    display: inline-block;
+}
+
+.user>span {
+    color: #56C4C5;
+    font-size: 12px;
+}
+
+.charge>p {
+    font-size: 32px;
+    display: inline-block;
+}
+
+.charge>span {
+    font-size: 12px;
+}
+
+.plan_pay .equal_style {
+    background-color: white;
+    align-self: center;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.plan_features {
+    margin-bottom: 32px;
+}
+
+.plan_features li {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.plan_features p {
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_check.svg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 1.5;
+    padding-left: 25px;
+}
+
+.item_basic a,
+.item_pro a {
+    display: block;
+    margin: 0 auto;
+    width: 136px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: white;
+    border-radius: 27px;
+    font-size: 18px;
+    background-color: #56C4C5;
+    text-decoration: none;
+}
+
+.item_basic a:hover,
+.item_pro a:hover {
+    color: #56C4C5;
+    border: 1px solid #56C4C5;
+    background-color: white;
+}
+
+.faq>h2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.faq li {
+    padding: 16px 32px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.faq li:hover {
+    cursor: pointer;
+}
+
+.faq_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq_title p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.faq_title p.active {
+    color: #56C4C5;
+}
+
+.faq_title button {
+    background-color: white;
+    border: none;
+
+}
+
+.faq_title button:hover {
+    cursor: pointer;
+}
+
+.faq li>p {
+    display: none;
+    padding: 24px 0px;
+    line-height: 1.5;
+    color: #747474;
+}
+
+
+.pay_footer p {
+    background-color: #F5F5F5;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media(max-width:992px) {
+    .pay_wrap {
+        padding: 0px 25px;
+    }
+
+    .pay_to_top {
+        right: 50px;
+        bottom: 10%;
+    }
+
+    .pay_banner {
+        padding: 192px 0 0px;
+    }
+
+    .subscriber a {
+        padding: 12px 25px;
+    }
+
+    .plan_detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan_detail>div {
+        width: 95%;
+        margin-right: 0;
+    }
+
+    .plan_pay {
+        justify-content: center;
+    }
+
+    .plan_features {
+        width: 60%;
+        margin: 0 auto 32px;
+    }
+
+    .basic {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:768px) {
+    .pay_body {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg');
+        background-repeat: no-repeat;
+        background-position: 0% -10%;
+        background-size: contain;
+    }
+
+    .pay_banner {
+        padding: 138px 0 0px;
+        margin-bottom: 421px;
+    }
+
+    .pay_banner p {
+        font-size: 20px;
+    }
+
+    .subscriber {
+        justify-content: flex-start;
+        overflow: scroll;
+    }
+
+    .subscriber a {
+        width: 130px;
+        text-align: center;
+        padding: 12px 25px;
+    }
+
+    .plan_features {
+        width: 80%;
+        margin: 0 auto 32px;
+    }
+
+}
+
+@media(max-width:576px) {
+    .subscriber {
+        overflow: scroll;
+    }
+
+    .subscriber a {
+        width: 130px;
+        text-align: center;
+        padding: 12px 25px;
+    }
+
+    .plan_features {
+        width: 100%;
+        margin: 0 auto 32px;
+    }
+}
+
+@media(max-width:380px) {
+    .pay_to_top {
+        right: 20px;
+        bottom: 7%;
+    }
+
+    .pay_body {
+        background-position: 0% 4%;
+    }
+
+    .pay_wrap {
+        padding: 0px 10px;
+    }
+
+    .pay_banner {
+        padding: 188px 0 0px;
+    }
+
+    .pay_banner h2 {
+        font-size: 32px;
+    }
+
+    .pay_banner p {
+        font-size: 16px;
+    }
+
+    .plan_detail>div {
+        width: 100%;
+    }
+
+    .item_basic,
+    .item_pro {
+        padding: 32px 5px;
+    }
+
+    .plan_pay {
+        justify-content: space-evenly;
+    }
+
+    .plan_pay .equal_style {
+        padding: 5px;
+    }
+
+    .plan_pay li {
+        background-color: #F5F5F5;
+        padding: 24px 10px;
+        border-radius: 12px;
+    }
+
+
+}
